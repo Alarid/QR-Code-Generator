@@ -1,6 +1,7 @@
 <template>
   <div class="qrcodes-list">
     <h2>My QR Codes</h2>
+    <p>Here is a list of your saved QR Codes</p>
     <div class="row" v-for="qrcode in qrcodes" :key="qrcode.id">
       <div class="col-auto">
         <QRCode :imgSrc="qrcode.url" />
