@@ -1,4 +1,12 @@
-# qrcode-generator
+# QR Code Generator
+
+VueJS / Bootstrap
+
+Generates QR Codes from URLs, and allow users to give them a title and save them.
+
+View project live : https://alarid.github.io/QR-Code-Generator/
+
+<hr>
 
 ## Project setup
 ```
@@ -24,6 +32,3 @@ npm run test:unit
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
