@@ -15,4 +15,8 @@ new Vue({
   router,
   store,
   render: (h) => h(App),
+  beforeCreate() {
+    // localStorage.removeItem('qrcodes');
+    this.$store.commit('initialiseStore');
+  },
 }).$mount('#app');

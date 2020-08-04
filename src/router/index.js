@@ -11,6 +11,20 @@ const routes = [
     component: Home,
   },
   {
+    path: '/save',
+    name: 'Save QR Code',
+    props: true,
+    component: () => import(/* webpackChunkName: "qrCodeSave" */ '../views/QRCodeSave.vue'),
+    beforeEnter(to, from, next) {
+      let allow = true;
+      if (!to.params.url) {
+        console.log('URL missing in request, navigation to QRCodeSave not allowed');
+        allow = false;
+      }
+      next(allow);
+    },
+  },
+  {
     path: '/about',
     name: 'About',
     // route level code-splitting
