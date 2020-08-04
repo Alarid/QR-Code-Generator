@@ -4,7 +4,7 @@ VueJS / Bootstrap
 
 Generates QR Codes from URLs, and allow users to give them a title and save them.
 
-View project live : https://alarid.github.io/QR-Code-Generator/
+View project live here : https://alarid.github.io/QR-Code-Generator/
 
 <hr>
 
