@@ -17,16 +17,16 @@
 
       <div class="row">
         <div class="col-6">
-          <button type="submit" class="btn btn-primary btn-lg mb-3 w-100">
+          <b-button type="submit" variant="info" class="mb-3 w-100" size="lg">
             Generate
-          </button>
+          </b-button>
         </div>
 
         <div class="col-6">
-          <button type="button" class="btn btn-warning btn-lg w-100 mb-3"
+          <b-button variant="warning" size="lg" class="w-100 mb-3"
             :disabled="!qrcode.generated" @click="saveQRCode(qrcode.url)">
             Save...
-          </button>
+          </b-button>
         </div>
       </div>
     </form>
